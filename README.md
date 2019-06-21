@@ -1,1 +1,1 @@
-# toDoList
+Trong file có bài tập về to do list. Dữ liệu ở trong bài này được lưu ở LocalStorage. Có các hàm như thêm, sửa, xóa, đánh giá các task đã hoàn thành, xem các task đã hoàn thành, chưa hoàn thành, và xóa các task đã hoàn thành. Khi bạn muốn xóa một task nào đó thì ở đây có set thời gian nếu sau 5s bạn ko click vào button Undo thì task đó sẽ bị xóa, ngược lại task đó sẽ được khôi phúc trở lại.
