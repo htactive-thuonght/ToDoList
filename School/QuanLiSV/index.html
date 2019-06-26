@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="data.js"></script>
+  <title>ToDo List</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <span class="navbar-brand" style="font-size:40px;">Manage Student</span>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="content-area row">
+      <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+
+      <div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+  
+      
+            <button class="btn btn-success" onclick="manage.loadStudent()">Student</button>
+            <button class="btn btn-success" onclick="manage.loadTeacher()">Teacher</button>
+            <button class="btn btn-success" onclick="manage.loadClass()"> Class</button>
+            <button class="btn btn-success" onclick="manage.loadSubject()"> Subject</button>
+            <button class="btn btn-success" onclick="manage.loadScore()"> Score</button>
+
+        </div>
+        <hr size="100">
+        <table class="table" id="table">
+            
+            
+        </table>
+
+      
+      </div>
+
+      <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+    </div>
+
+  </div><!-- /.container -->
+  <script src="javascript.js"></script>
+</body>
+
+</html>
