@@ -17,39 +17,94 @@
     <div class="container">
       <div class="navbar-header">
         <span class="navbar-brand" style="font-size:40px;">Manage Student</span>
-
       </div>
     </div>
   </nav>
-
   <div class="container">
-
-    <div class="content-area row">
-      <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
-
-      <div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
-  
-      
-            <button class="btn btn-success" onclick="manage.loadStudent()">Student</button>
-            <button class="btn btn-success" onclick="manage.loadTeacher()">Teacher</button>
-            <button class="btn btn-success" onclick="manage.loadClass()"> Class</button>
-            <button class="btn btn-success" onclick="manage.loadSubject()"> Subject</button>
-            <button class="btn btn-success" onclick="manage.loadScore()"> Score</button>
-
-        </div>
-        <hr size="100">
-        <table class="table" id="table">
-            
-            
-        </table>
-
-      
+    <div class="content-area row" style="    margin-left: -105px;
+    margin-right: -112px;">
+      <div class="col-md-8 col-xs-8 col-lg-8 col-sm-8" style="display: flex;">
+        <button class="btn btn-success" onclick="manage.loadStudent()">Student</button>
+        <button class="btn btn-success" onclick="manage.loadTeacher()">Teacher</button>
+        <button class="btn btn-success" onclick="manage.loadClass()"> Class</button>
+        <button class="btn btn-success" onclick="manage.loadSubject()"> Subject</button>
+        <button class="btn btn-success" onclick="manage.loadScore()"> Score</button>
       </div>
+      <hr size="30" style="width: 100%; margin-bottom: 50px">
+      <div class="row">
+        <table class="table" id="table">
+        </table>
+        <div class="row" id="addhihi" style=" margin-top: 50px;    margin-left: 180px;">
+          <button class="btn btn-success" style=" visibility: hidden;width: 100px;height: 50px;" id="undo"
+            onclick="manage.unDo(event,'${sv.id}')"><i class="fa fa-undo"></i></button>
+          <button class="btn btn-success" style="display: block;width: 100px;height: 50px;" onclick="manage.displayFormAdsStudent()" id="buttonAddSt">ADD
+          </button>
+          <button class="btn btn-success" style="display: none; width: 100px;height: 50px;" onclick="manage.displayFormAddTeacher()" id="buttonAddTc">ADD
+            </button>
+            <button class="btn btn-success" style="display: none; width: 100px;height: 50px;" onclick="manage.displayForm()" id="buttonAddSt">ADD
+              </button>
+              <button class="btn btn-success" style="display: none; width: 100px;height: 50px;" onclick="manage.displayForm()" id="buttonAddSt">ADD
+                </button>
+          <form hidden id="formAddStudent">
+            <div class="form-group">
+              <label for="">Name Student</label>
+              <input style="    width: 600px;" type="text" placeholder="Name Student..." class="form-control"
+                id="nameStudent">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Gender</label>
+                <select class="form-control" id="genderStudent">
+                  <option>Female</option>
+                  <option>Male</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Class</label>
+                <select class="form-control" id="classStudent">
+                  <option>PNV20A</option>
+                  <option>PNV20B</option>
+                  <option>PNV21B</option>
+                  <option>PNV21A</option>
+                </select>
+              </div>
+            <div class="form-group col-md-1">
+              <input id="btnsubmitSt" type="button" value="Submit" class="btn btn-success"
+                onclick="manage.addStudentClick()">
+            </div>
+          </form>
 
-      <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+          <form hidden id="formAddTeacher">
+              <div class="form-group">
+                <label for="">Name Teacher</label>
+                <input style="    width: 600px;" type="text" placeholder="Name Student..." class="form-control"
+                  id="nameStudent">
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">Gender</label>
+                  <select class="form-control" id="genderStudent">
+                    <option>Female</option>
+                    <option>Male</option>
+                  </select>
+                </div>
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">Class</label>
+                  <select class="form-control" id="classStudent">
+                    <option>PNV20A</option>
+                    <option>PNV20B</option>
+                    <option>PNV21B</option>
+                    <option>PNV21A</option>
+                  </select>
+                </div>
+              <div class="form-group col-md-1">
+                <input id="btnsubmitTc" type="button" value="Submit" class="btn btn-success"
+                  onclick="manage.addStudentClick()">
+              </div>
+            </form>
+        </div>
+      </div>
     </div>
-
-  </div><!-- /.container -->
+    <div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+  </div>
   <script src="javascript.js"></script>
 </body>
 
